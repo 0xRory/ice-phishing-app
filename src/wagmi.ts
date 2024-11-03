@@ -10,8 +10,8 @@ console.log(
   process.env.NEXT_PUBLIC_REOWN_PROJECT_ID
 );
 export const config = getDefaultConfig({
-  appName: process.env.NEXT_PUBLIC_REOWN_APP_NAME,
-  projectId: process.env.NEXT_PUBLIC_REOWN_PROJECT_ID,
+  appName: process.env.NEXT_PUBLIC_REOWN_APP_NAME as string,
+  projectId: process.env.NEXT_PUBLIC_REOWN_PROJECT_ID as string,
   chains: [
     // mainnet,
     holesky,
